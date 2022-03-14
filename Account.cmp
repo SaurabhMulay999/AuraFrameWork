@@ -1,0 +1,20 @@
+<aura:application extends="force:slds" controller="createAcc">
+    <aura:attribute type="boolean" name="Act" default="false"/>
+    <aura:attribute type="Account" name="AccRecord" default="{'sobjectType':'Account'}"/>
+    <lightning:card class="ApexCode" iconName="standard:account" >
+    <aura:set attribute="title">
+        Aura Account
+        </aura:set>
+        <div>
+            <lightning:input label="Name" value="{!v.AccRecord.Name}"/>
+            <lightning:input label="Phone" value="{!v.AccRecord.Phone}"/>
+            <lightning:input label="Industry" value="{!v.AccRecord.Industry}"/>
+        </div>
+        <aura:set attribute="actions">
+            
+            <lightning:button label="Save" onclick="{!c.Save}"/>
+            <lightning:button label="ClearData" onclick="{!c.clear}"/>
+        </aura:set>
+    </lightning:card>
+    
+</aura:application>
