@@ -1,0 +1,7 @@
+<aura:component >
+    <!--here we  have to register the event first-->
+    <!--registrer event takes name, type and thats all--> 
+    <aura:registerEvent  name="FIRSTEVT" type="c:EVT1"/>
+    <lightning:button label="CLick" onclick="{!c.ClickHere}"/>
+	
+</aura:component>
