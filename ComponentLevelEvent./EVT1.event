@@ -1,0 +1,10 @@
+<aura:event type="COMPONENT" description="Event template" >
+
+<!--we are dealing with component level events -->
+    <!--define one attribute here to just share data betn components-->
+    
+    
+    <aura:attribute name="FLAG" type="boolean"/>
+    
+
+</aura:event>
