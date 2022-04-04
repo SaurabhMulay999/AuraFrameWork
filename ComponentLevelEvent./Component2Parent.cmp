@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:attribute name="FLAG1" type="boolean" default="false" />
+    <aura:handler name="FIRSTEVT" event="c:EVT1" action="{!c.inv}"/>
+    <c:component1event/>
+    <aura:if isTrue="{!v.FLAG1}"> <!--isTrue-->
+        <lightning:button label="SHOW"/>
+    
+    </aura:if>
+	
+</aura:component>
