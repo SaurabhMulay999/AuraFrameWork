@@ -1,0 +1,24 @@
+<aura:component controller="ContactInfo">
+    <aura:registerEvent name="contact" type="c:B1"/>
+    <aura:attribute name="C1" type="contact" default="{'sobjectType':'contact'}"/>
+    
+    <div style="height:400px;width:400px;margin:10px">
+    <lightning:card title="Create a Contact">
+        <aura:set attribute="actions">
+        
+            <lightning:button label="Create" onclick="{!c.Save}"/>
+            
+            <lightning:button label="Clear" onclick="{!c.Clear}"/>
+        </aura:set>
+        <lightning:input label="Email" value="{!v.C1.Email}"/>
+        
+        <lightning:input label="LastName" value="{!v.C1.LastName}"/>
+        
+        <lightning:input label="Phone" value="{!v.C1.Phone}"/>
+        
+        </lightning:card>
+    
+    
+    </div>
+	
+</aura:component>
