@@ -1,0 +1,25 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+	<!--parent component-->
+    <aura:attribute name="C1" type="contact"/>
+    <!--handle that event here-->
+    <aura:handler name="contact" event="c:B1" action="{!c.h}"/>
+    
+    <c:B1child/>
+    
+    
+    <div style="height:400px;width:400px;margin:10px;">
+        <lightning:card title="Details">
+        
+            <b>Email</b>	: {!v.C1.Email}<br/>
+            
+            <b>Phone</b>	: {!v.C1.Phone}<br/>
+        
+            
+            <b>Lastname</b>	: {!v.C1.LastName}<br/>
+        
+        
+        </lightning:card>
+    
+    </div>
+    
+</aura:component>
