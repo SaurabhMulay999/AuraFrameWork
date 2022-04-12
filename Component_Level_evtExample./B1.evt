@@ -1,0 +1,8 @@
+<aura:event type="COMPONENT" description="Event template" >
+
+<!--here we are declaring the attribute-->
+    
+    <aura:attribute name="C1" type="contact"/>
+    
+
+</aura:event>
